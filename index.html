@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>不露</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="不露">
+<meta property="og:url" content="https://bluewaitor.github.io/index.html">
+<meta property="og:site_name" content="不露">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="不露">
+  
+    <link rel="alternate" href="/atom.xml" title="不露" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">不露</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://bluewaitor.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-安装JDK" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/16/安装JDK/" class="article-date">
+  <time datetime="2016-08-16T05:15:51.000Z" itemprop="datePublished">2016-08-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/16/安装JDK/">安装JDK</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>到 <a href="http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html" target="_blank" rel="external">官网</a> 下载JDK, 默认是最新版本, 以前版本的可以到 <a href="http://www.oracle.com/technetwork/java/javase/archive-139210.html" target="_blank" rel="external">这里</a> 选择相应的版本, 下载到本地中.<br>我安装的版本是1.7.0_80版本</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>双击下载的exe文件, 运行安装程序.</p>
+<h3 id="1-向导"><a href="#1-向导" class="headerlink" title="1. 向导"></a>1. 向导</h3><p>直接点下一步即可<br><img src="/images/setup1.png" alt="向导"></p>
+<h3 id="2-定制安装"><a href="#2-定制安装" class="headerlink" title="2. 定制安装"></a>2. 定制安装</h3><p>选择安装的程序, 安装的地址<br><img src="/images/setup2.jpg" alt="定制安装"></p>
+<h3 id="3-安装进度"><a href="#3-安装进度" class="headerlink" title="3. 安装进度"></a>3. 安装进度</h3><p><img src="/images/setup3.png" alt="安装进度"></p>
+<h3 id="4-选择jre安装的地址"><a href="#4-选择jre安装的地址" class="headerlink" title="4. 选择jre安装的地址"></a>4. 选择jre安装的地址</h3><p><img src="/images/setup4.png" alt="选择jre安装的地址"><br><img src="/images/setup5.png" alt="选择jre安装的地址"></p>
+<h3 id="5-完成"><a href="#5-完成" class="headerlink" title="5. 完成"></a>5. 完成</h3><p><img src="/images/setup6.png" alt="完成"></p>
+<h3 id="6-测试安装是否完成"><a href="#6-测试安装是否完成" class="headerlink" title="6. 测试安装是否完成"></a>6. 测试安装是否完成</h3><p>打开cmd, 敲入<code>java -version</code> 看到下图就说明安装成功了.<br><img src="/images/setup7.png" alt="测试安装是否完成"></p>
+<h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><h3 id="1-设置环境变量"><a href="#1-设置环境变量" class="headerlink" title="1. 设置环境变量"></a>1. 设置环境变量</h3><p>找到我的电脑, 右键-&gt;属性-&gt;高级系统变量-&gt;高级-&gt;环境变量<br>新建变量(系统变量或者用户变量都可以)  </p>
+<ol>
+<li>变量名: JAVA_HOME 变量值: 安装目录</li>
+<li>变量名: CLASSPATH 变量值: <code>.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</code></li>
+<li>在变量Path中加入<code>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</code>记得用英文分号分隔</li>
+</ol>
+<h3 id="2-测试环境变量是否设置完成"><a href="#2-测试环境变量是否设置完成" class="headerlink" title="2. 测试环境变量是否设置完成"></a>2. 测试环境变量是否设置完成</h3><p>打开cmd, 敲入<code>javac -version</code> 看到下图就说明环境变量设置成功了.<br><img src="/images/setup8.png" alt="测试环境变量是否设置完成"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bluewaitor.github.io/2016/08/16/安装JDK/" data-id="cirx0une000018oqxsm4xrrid" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-学习网址" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/29/学习网址/" class="article-date">
+  <time datetime="2016-06-29T07:28:26.000Z" itemprop="datePublished">2016-06-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/29/学习网址/">学习网址</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="国内"><a href="#国内" class="headerlink" title="国内"></a>国内</h1><ul>
+<li><a href="http://www.imooc.com" target="_blank" rel="external">慕课网</a> </li>
+<li><a href="http://www.hubwiz.com" target="_blank" rel="external">汇智网</a> </li>
+<li><a href="http://www.mengma.com" target="_blank" rel="external">萌码</a> </li>
+<li><a href="http://www.shiyanlou.com" target="_blank" rel="external">实验楼</a> </li>
+<li><a href="http://haoduoshipin.com" target="_blank" rel="external">好多视频</a> </li>
+<li><a href="http://www.runoob.com/" target="_blank" rel="external">菜鸟教程</a> <code>文字教程</code></li>
+<li><a href="http://www.fenby.com/" target="_blank" rel="external">微享网</a> <code>文字教程</code></li>
+<li><a href="https://www.jisuanke.com/" target="_blank" rel="external">计蒜客</a> <code>泡面吧</code></li>
+</ul>
+<h1 id="国外"><a href="#国外" class="headerlink" title="国外"></a>国外</h1><ul>
+<li><a href="http://cn.codecombat.com/play/level/dungeons-of-kithgard" target="_blank" rel="external">游戏学编程</a> </li>
+<li><a href="http://codeschool.com" target="_blank" rel="external">codeschool</a> </li>
+<li><a href="https://freecodecamp.com/" target="_blank" rel="external">freecodecamp</a> </li>
+<li><a href="http://www.techonthenet.com/" target="_blank" rel="external">tech on the net</a> </li>
+<li><a href="http://www.tutorialspoint.com/" target="_blank" rel="external">tutorialspoint</a></li>
+<li><a href="https://www.hackerrank.com/" target="_blank" rel="external">hackerrank</a> </li>
+<li><a href="https://www.hackerearth.com/challenges/" target="_blank" rel="external">hackerearth</a></li>
+<li><a href="https://scotch.io/tutorials" target="_blank" rel="external">scotch.io</a> <code>主要是博客</code></li>
+<li><a href="https://thenewboston.com/" target="_blank" rel="external">thenewboston</a> <code>视频网站</code></li>
+<li><a href="http://marksheet.io/" target="_blank" rel="external">marksheet</a> <code>web,html5,css3,sass</code></li>
+<li><a href="http://www.htmldog.com/" target="_blank" rel="external">htmldog</a></li>
+<li><a href="http://jsforcats.com/" target="_blank" rel="external">jsforcats</a></li>
+<li><a href="http://tutsplus.com/" target="_blank" rel="external">tutsplus</a></li>
+<li><a href="https://www.sitepoint.com/" target="_blank" rel="external">sitepoint</a></li>
+<li><a href="https://css-tricks.com/" target="_blank" rel="external">css-tricks</a> </li>
+<li><a href="http://it-ebooks.info/" target="_blank" rel="external">it-ebooks</a> <code>免费下载it书</code></li>
+<li><a href="https://egghead.io/" target="_blank" rel="external">egghead</a> <code>视频网站</code></li>
+<li><a href="https://www.pluralsight.com/" target="_blank" rel="external">pluralsight</a></li>
+<li><a href="http://onehungrymind.com/" target="_blank" rel="external">onehungrymind</a> <code>angular 博客</code></li>
+<li><a href="https://thinkster.io/" target="_blank" rel="external">thinkster</a></li>
+<li><a href="http://tagtree.io/library" target="_blank" rel="external">tagtree</a></li>
+<li><a href="http://www.dungeonsanddevelopers.com/" target="_blank" rel="external">技能树</a></li>
+<li><a href="http://skill.phodal.com/#_abhi_1_YKing" target="_blank" rel="external">技能树中文版</a></li>
+<li><a href="https://codehs.com/" target="_blank" rel="external">codehs</a></li>
+<li><a href="https://www.codecademy.com/" target="_blank" rel="external">codecademy</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bluewaitor.github.io/2016/06/29/学习网址/" data-id="cirx0undv00008oqx70vgdfxz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/学习/" style="font-size: 10px;">学习</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/08/16/安装JDK/">安装JDK</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/29/学习网址/">学习网址</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 bluewaitor<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
